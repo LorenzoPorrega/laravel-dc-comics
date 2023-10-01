@@ -4,4 +4,155 @@
 @use "partials/header";
 @use "partials/main";
 @use "partials/footer";
-@use "partials/variables" as *;
+@use './partials/_variables.scss' as *;
+
+body{
+  margin-top: 115px;
+}
+
+.bg-custom-primary{
+  background-color: $color-primary;
+}
+
+.bg-custom-secondary{
+  background-color: $color-secondary;
+}
+
+.navbar{
+  padding-top: 25px;
+  .nav-bar-top-banner{
+    background-color: $color-primary;
+    height: 25px;
+    width: 100%;
+    .container{
+      height: 25px;
+      .row{
+        height: 25px;
+        span, div{
+          height: 25px;
+          font-size: 0.9rem;
+          width: fit-content;
+          i{
+            height: 19px;
+            padding-left: 1px;
+          }
+        }
+      }
+    }
+  }
+  .navbar-collapse{
+    height: 90px;
+    padding: 0;
+    .navbar-nav{
+      height: 90px;
+      padding: 0;
+      .nav-link{
+        padding: 0 8px;
+        &:hover{
+          border-bottom: 5px solid $color-primary;
+          padding-top: 5px;
+        }
+        a{
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+.home-jumbo{
+  .background-image{
+    height: 550px;
+    background-image: url('./../../public/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comics-list{
+    background-color: $bg-color-comics-list;
+    .current-series-tag{
+      width: fit-content;
+      height: fit-content;
+      background-color: $color-primary;
+      left: 0;
+      top: -25px;
+    }
+    .card{
+      
+      .card-img-top{
+        width: 100%;
+        aspect-ratio: 0.65/1;
+        object-fit: cover;
+      }
+    }
+    
+  }
+}
+
+.menu-banner{
+  height: 150px;
+  background-color: $color-primary;
+  .container{
+    height: 100%;
+    .menu-col{
+      width: fit-content;
+    }
+    .icon-box{
+      height: 40px;
+      width: fit-content;
+      img{
+        height: 100%;
+      }
+    }
+    p{
+      text-wrap:wrap;
+      font-size: 0.8rem;
+      text-decoration: none;
+      &hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.top-footer{
+  height:475px;
+  background-image: url('../../public/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .footer-bg-logo{
+    margin-top: -75px;
+    transform: scale(125%);
+  }
+  .title-box{
+    height: 50px;
+    .title{
+      color: white;
+      font-size: 1.25rem;
+    }
+  }
+  .sub-title{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: .9rem;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .copyright-notice{
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+  }
+}
+.bottom-footer{
+  height: 75px;
+  background-color: $color-secondary;
+  button{
+    background-color: transparent;
+    &:hover{
+      background-color: $color-primary;
+    }
+  }
+  h5{
+    color: $color-primary;
+  }
+}
