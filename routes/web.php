@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ComicController::class, "index"])->name("homepage");
 
-Route::get('/{id}', [ComicController::class, "show"])->name("home.show");
+Route::get('/comic/create', [ComicController::class, "create"])->name("comic.create");
+Route::post("/comic", [ComicController::class, "store"])->name("comic.store");
 
+Route::get('/comic/{id}', [ComicController::class, "show"])->name("comic.show");

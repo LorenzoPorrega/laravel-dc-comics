@@ -23,7 +23,7 @@
     </div>
   </div>
   <div class="container h-100 my-0">
-    <a class="navbar-brand" href="/"><img src="img/dc-logo.png" alt="logo" style="width: 80px;"></a>
+    <a class="navbar-brand" href="/"><img src="../img/dc-logo.png" alt="logo" style="width: 80px;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav text-uppercase">
         @foreach ($menuSections as $section)
-        <a class="nav-link ms-4 fw-bold h-100 d-flex justify-content-center align-items-center position-relative" href="#">
+        <a class="nav-link ms-4 fw-bold h-100 d-flex justify-content-center align-items-center position-relative" class={{ Request::route()->getName() === $section['title'] ? 'active' : ' ' }} href={{ $section['title'] === 'Comics' ? '/' : ' ' }}>
           {{ $section["title"] }}
           <div class="after-div" tabindex="0"></div>
         </a>

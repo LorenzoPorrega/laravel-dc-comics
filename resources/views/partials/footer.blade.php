@@ -4,46 +4,46 @@
     [
       "title" => "Digital Comics",
       "sub" => [
-        "1" => "Character",
-        "2" => "Comics",
-        "3" => "Movies",
-        "4" => "TV",
-        "5" => "Games",
-        "6" => "News"
+        "Character",
+        "Comics",
+        "Movies",
+        "TV",
+        "Games",
+        "News"
       ],
     ],
     [
       "title" => "Shop",
       "sub" => [
-        "1" => "Shop DC",
-        "2" => "Shop DC Collectibles"
+        "Shop DC",
+        "Shop DC Collectibles"
       ],
     ],
     [
       "title" => "DC",
       "sub" => [
-        "1" => "Terms Of Use",
-        "2" => "Privacy policy (New)",
-        "3" => "Ad Choices",
-        "4" => "Advertising",
-        "5" => "Jobs",
-        "6" => "Subscriptions",
-        "7" => "Talent Workshops",
-        "8" => "Talent Workshops",
-        "9" => "CPSC Certificates",
-        "10" => "Ratings",
-        "11" => "Shop Help",
-        "12" => "Contact Us"
+        "Terms Of Use",
+        "Privacy policy (New)",
+        "Ad Choices",
+        "Advertising",
+        "Jobs",
+        "Subscriptions",
+        "Talent Workshops",
+        "Talent Workshops",
+        "CPSC Certificates",
+        "Ratings",
+        "Shop Help",
+        "Contact Us"
       ],
     ],
     [
       "title" => "Sites",
       "sub" => [
-        "1" => "DC",
-        "2" => "MAD Magazine",
-        "3" => "DC Kids",
-        "4" => "DC Universe",
-        "5" => "DC Power Visa"
+        "DC",
+        "MAD Magazine",
+        "DC Kids",
+        "DC Universe",
+        "DC Power Visa"
       ],
     ]
   ];

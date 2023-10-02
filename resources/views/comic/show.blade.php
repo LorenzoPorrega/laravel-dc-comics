@@ -1,6 +1,9 @@
 @extends('layouts.public')
 @section('title', 'Comic content')
 @section('content')
+@php
+    $chars = ['[', ']', '"'];
+@endphp
   <div class="home-jumbo">
     <div class="background-image"></div>
     <div class="row thumb-container d-flex justify-content-center">
@@ -30,7 +33,7 @@
             </div>
             <p class="comic-description mt-3">{{ $comic->description}}</p>
           </div>
-          <div class="col-4">
+          <div class="col-4 pb-3">
             <div class="d-flex justify-content-end w-100">
               <span class="text-body-tertiary fw-bold">ADVERTISEMENT</span>
             </div>
@@ -49,7 +52,7 @@
                 <p class="blue-title">Art by:</p>
               </div>
               <div class="col-9">
-                <a class="fw-bold text-decoration-none">{{join(", ",json_decode($comic["artists"]))}}</a>
+                <a class="fw-bold text-decoration-none">{{ $comic->artists ? str_replace($chars, '', $comic['writers']) : "" }}</a>
               </div>
             </div>
             <div class="row border-bottom border-light-subtle pt-2 pb-2">
@@ -57,7 +60,7 @@
                 <p class="blue-title">Written by:</p>
               </div>
               <div class="col-9">
-                <a class="fw-bold text-decoration-none">{{join(", ",json_decode($comic["writers"]))}}</a>
+                <a class="fw-bold text-decoration-none">{{ $comic->writers ? str_replace($chars, '', $comic['artists']) : "" }}</a>
               </div>
             </div>
           </div>
@@ -84,7 +87,7 @@
                 <p class="blue-title">On Sale Date:</p>
               </div>
               <div class="col-9">
-                <span class="text-decoration-none">{{  date('M d Y', strtotime($comic->sale_date)) }}</span>
+                <span class="text-decoration-none">{{ $comic->sale_date ? $comic->sale_date->format('M d Y') : "" }}</span>
               </div>
             </div>
           </div>
