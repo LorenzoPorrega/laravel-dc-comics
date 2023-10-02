@@ -156,3 +156,51 @@ body{
     color: $color-primary;
   }
 }
+
+.thumb-container{
+  background-color: $color-primary;
+  height: 75px;
+  .thumb-preview{
+    top: -250px;
+    left: 0;
+    width: 200px;
+    background-color: $color-secondary;
+    .thumb-box{
+      width: 200px;
+      height: 300px;
+      img{
+        aspect-ratio: 0.65/1;
+        object-fit: cover;
+        width: fit-content;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.single-comic-box{
+  h3{
+    color: rgb(0, 66, 93);
+  }
+  .price-checker{
+    background-color: rgb(85, 186, 89);
+    font-size: .9rem;
+    .opaque-green{
+      color: rgb(179, 246, 137);
+    }
+  }
+  .comic-description{
+    color: rgb(59, 59, 59);
+    font-size: 0.85rem;
+  }
+}
+
+.comic-spec-box{
+  background-color: rgb(246, 246, 246);
+  .blue-title{
+    color: rgb(0, 66, 93);
+  }
+  p, a, span{
+    font-size: 0.9rem;
+  }
+}
