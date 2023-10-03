@@ -2,23 +2,23 @@
   $menuItems = [
     [
       "title" => "Digital Comics",
-      "icon" => "img/buy-comics-digital-comics.png"
+      "icon" => "../img/buy-comics-digital-comics.png"
     ],
     [
       "title" => "DC Merchandise",
-      "icon" => "img/buy-comics-merchandise.png"
+      "icon" => "../img/buy-comics-merchandise.png"
     ],
     [
       "title" => "Subscription",
-      "icon" => "img/buy-comics-shop-locator.png"
+      "icon" => "../img/buy-comics-shop-locator.png"
     ],
     [
       "title" => "Comic Shop Locator",
-      "icon" => "img/buy-comics-subscriptions.png"
+      "icon" => "../img/buy-comics-subscriptions.png"
     ],
     [
       "title" => "DC Power Visa",
-      "icon" => "img/buy-dc-power-visa.svg"
+      "icon" => "../img/buy-dc-power-visa.svg"
     ],
 ];
 @endphp

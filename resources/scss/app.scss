@@ -168,7 +168,7 @@ body{
   background-color: $color-primary;
   height: 75px;
   .thumb-preview{
-    top: -250px;
+    top: -275px;
     left: 0;
     width: 200px;
     background-color: $color-secondary;
@@ -209,5 +209,33 @@ body{
   }
   p, a, span{
     font-size: 0.9rem;
+  }
+}
+
+.comic-edit {
+  right: 0;
+}
+
+.deleted-comics{
+  left: 0;
+}
+
+.deleted-comic-card{
+  .posionated-delete{
+    display: none;
+    top: 0;
+    left: 0;
+    & *{
+      display: none;
+    }
+  }
+  &:hover .posionated-delete{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.605);
+    & *{
+      display: block;
+    }
   }
 }

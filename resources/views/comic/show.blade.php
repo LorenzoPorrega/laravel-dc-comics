@@ -7,12 +7,25 @@
   <div class="home-jumbo">
     <div class="background-image"></div>
     <div class="row thumb-container d-flex justify-content-center">
-      <div class="col-6">
+      <div class="col-6 position-relative d-flex align-items-center">
         <div class="thumb-preview position-relative">
           <div class="thumb-box border border-2 border-white position-absolute">
             <img src="{{ $comic->thumb }}" title="{{ $comic->title }}">
           </div>
         </div>
+        <div class="position-absolute comic-edit d-flex flew-row">
+          <div class="text-white fw-bold fs-4 px-4 py-1">
+            <a href="{{ "/comic/$comic->id/edit" }}" class="text-white"><span>&#9998;</span> EDIT THE COMIC</a>
+          </div>
+          <div>
+            <form action="{{ route('comic.destroy', $comic->id) }}" method="POST" class="d-inline-block">
+              @csrf
+              @method("DELETE")
+              <button type="submit" class="btn btn-danger text-white fw-bold fs-4 px-3 py-1"><i class="fa-solid fa-trash"></i></button>
+            </form>
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5">
