@@ -11,8 +11,8 @@ class Comic extends Model
   use HasFactory, SoftDeletes;
 
   protected $casts = [
-    "sale_date" => "date",
-    /* "artists" => "array",
+    /* "sale_date" => "date",
+    "artists" => "array",
     "writers" => "array" */
   ];
 
