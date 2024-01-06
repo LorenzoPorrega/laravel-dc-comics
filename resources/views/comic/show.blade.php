@@ -100,7 +100,7 @@
                 <p class="blue-title">On Sale Date:</p>
               </div>
               <div class="col-9">
-                <span class="text-decoration-none">{{ $comic->sale_date ? $comic->sale_date->format('M d Y') : "" }}</span>
+                <span class="text-decoration-none">{{ $comic->sale_date ? $comic->sale_date : "" }}</span>
               </div>
             </div>
           </div>
